@@ -9,6 +9,7 @@
 	"version": "0.0.1",
 	"license": "BSD-3 Clause",
 	"devDependencies": {
+		"cssnano": "^4.1.10",
 		"karma": "^5.0.5",
 		"karma-chrome-launcher": "^3.1.0",
 		"karma-typescript": "^5.0.2",
