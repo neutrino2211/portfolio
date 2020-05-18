@@ -1,0 +1,67 @@
+@import '../../variables.scss';
+
+.project-card {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 30px;
+    display: inline-block;
+    overflow: hidden;
+
+    &:hover {
+
+        div.project-image {
+            transform: scale(1.05);
+        }
+
+        div.project-text > a {
+            text-decoration: underline;
+        }
+
+    }
+
+    div.project-image {
+        height: 300px;
+        transition: all 0.3s;
+        background-color: rgba(92, 89, 89, 0.20);
+
+        img {
+            height: 100%;
+            margin: 10px auto;
+            max-height: 400px;
+            display: block;
+            border-radius: 10px;
+            background-size: cover;
+        }
+    }
+
+    div.project-text {
+        bottom: 0;
+        margin-left: 20px;
+        height: 100px;
+
+        h2 {
+            text-decoration: none;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    @media (min-width: $breakpoints-tabletMin) {
+        width: 45%;
+        margin-left: 2%;
+
+        div.project-text {
+            height: 125px;
+        }
+    }
+    
+    div.project-image {
+        height: 250px;
+    }
+}

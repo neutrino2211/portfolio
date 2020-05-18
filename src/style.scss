@@ -1,0 +1,298 @@
+@import url('./assets/BAHNSCHRIFT.TTF');
+@font-face {
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bahnschrift'), url('./assets/BAHNSCHRIFT.woff') format('woff');
+}
+
+@import './variables.scss';
+
+$portfolio-dark-green: #2AE3B2;
+$portfolio-green: #42F3C4;
+$portfolio-red: #FF3476;
+$grey-color: rgba(139, 139, 139, 0.28);
+
+
+html, body {
+    font-family: 'Bahnschrift', serif;
+    transition: background-color 0.5s;
+    margin: 0;
+}
+
+body {
+    &.light {
+        background-color: #F5F5F5;
+    }
+
+    &.dark {
+        background-color: #00111C;
+    }
+
+    @media (prefers-color-scheme: "dark") {
+        background-color: #00111C;
+    }
+}
+
+
+p, h1, h2, h3, a {
+    &.light {
+        color: black;
+    }
+
+    &.dark {
+        color: white;
+    }
+
+    @media (prefers-color-scheme: "dark") {
+        color: white;
+    }
+}
+
+// SVG Animations
+
+svg path, svg g {
+    transition: all 1s;
+}
+
+svg.active #moon {
+    transform: scale(0.01);
+    margin-top: 25px;
+    margin-left: 25px;
+    fill: #0000;
+}
+
+svg.inactive g {
+    transform: scale(0.01);
+    
+    path {
+        fill: #0000;
+    }
+}
+
+// Image
+
+div.image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $grey-color;
+    background-image: url('./assets/mypic3.jpg');
+    background-size: cover;
+    display: inline-block;
+
+    @media (max-width: 500px) {
+        width: 30vw;
+        height: 30vw;
+    }
+}
+
+// Toggle
+
+night-mode-toggle {
+    right: -80%;
+    position: relative;
+    cursor: pointer;
+
+    @media (max-width: $breakpoints-mobileMax) {
+        right: -60%;
+    }
+
+    @media (max-width: 500px) {
+        right: -50%;
+        svg {
+            width: 10vw;
+            height: 10vw;
+        }
+    }
+
+    @media (max-width: 350px) {
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+}
+
+// Heading
+
+img[alt="quote"] {
+    height: 3vw;
+    max-height: 50px;
+
+    @media(max-width: 500px) {
+        display: none;
+    }
+}
+
+.quote-right {
+    bottom: 1%;
+    right: -100%;
+    position: relative;
+}
+
+.quote-left {
+    top: -1%;
+    left: -12.5%;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.heading {
+    width: fit-content;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin: 25px auto;
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: 370;
+    margin: 0px;
+
+    &.work {
+        display: inline-block;
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 300px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: $breakpoints-mobileMax) {
+        font-size: 30px;
+    }
+
+    @media (min-width: $breakpoints-tabletMin) {
+        font-size: 40px;
+    }
+
+    @media (min-width: $breakpoints-desktopMin) {
+        font-size: 2.5vw;
+    }
+}
+
+h2 {
+    font-weight: 370;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 370;
+    margin-top: 50px;
+}
+
+span.red {
+    color: $portfolio-red;
+}
+
+span.green {
+    color: $portfolio-dark-green;
+
+    @media (prefers-color-scheme: "dark") {
+        color: $portfolio-green;
+    }
+}
+
+.skill {
+
+    width: 120px;
+    margin: 15px auto 15px auto;
+    list-style: none;
+    display: inline-block;
+
+    &.good {
+        div {
+            background-color: $portfolio-dark-green;
+
+            @media (prefers-color-scheme: "dark") {
+                background-color: $portfolio-green;
+            }
+        }
+    }
+
+    &.played {
+        div {
+            background-color: $portfolio-red;
+        }
+    }
+
+    div {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 10%;
+    }
+    
+    p {
+        display: inline;
+        font-size: 12px !important;
+    }
+}
+
+// https://github.com/juliajcodes/JuliaCodesGatsby/blob/master/src/components/footer/Footer.js#L35
+.container {
+    margin: 25px auto;
+    width: 90%;
+
+    &.body {
+        p {
+            font-size: 16px;
+            margin-bottom: 11px;
+        }
+
+        margin-top: 0px;
+    }
+
+    @media (min-width: $breakpoints-tabletMin) {
+        width: 80%;
+        max-width: 940px;
+        margin: 75px auto;
+    }
+    @media (min-width: $breakpoints-desktopMin) {
+        width: 60%;
+        max-width: 1200px;
+        margin: 75px auto 0 auto;
+    }
+}
+
+// Footer
+
+footer {
+    background-color: rgba(0, 0, 0, 0.13);
+    height: 400px;
+
+    h2 {
+        text-decoration: none;
+        padding-top: 120px;
+        position: relative;
+    }
+
+    p {
+        padding-bottom: 50px;
+    }
+
+    a {
+        font-size: 20px;
+        color: black;
+
+        @media (prefers-color-scheme: "dark") {
+            color: white;
+        }
+    }
+}
+
+// General Media
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    night-mode-toggle {
+        height: 10vw;
+        width: 10vw;
+    }
+}

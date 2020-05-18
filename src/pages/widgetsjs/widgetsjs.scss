@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+
+p.introduction {
+    margin-top: 50px;
+
+    @media (min-width: $breakpoints-desktopMin) {
+        margin-top: 100px;
+    }
+}
+
+div.link {
+    margin-left: 50%;
+    position: relative;
+    top: -50px;
+    width: fit-content;
+
+    @media (min-width: $breakpoints-mobileMax) {
+        margin-left: 75%;
+    }
+
+    @media (min-width: $breakpoints-tabletMin) {
+        margin-left: 75%;
+        top: -110px;
+    }
+
+    @media (min-width: $breakpoints-desktopMin) {
+        margin-left: 75%;
+        top: -28px;
+    }
+}

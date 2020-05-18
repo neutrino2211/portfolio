@@ -1,0 +1,29 @@
+{
+	"name": "portfolio-new",
+	"wjs-config": {
+		"project-type": "typescript",
+		"root": "dist",
+		"entry": "src/index.html"
+	},
+	"author": "Tsowa Mainasara Al-amin",
+	"version": "0.0.1",
+	"license": "BSD-3 Clause",
+	"devDependencies": {
+		"karma": "^5.0.5",
+		"karma-chrome-launcher": "^3.1.0",
+		"karma-typescript": "^5.0.2",
+		"postcss": "^7.0.30",
+		"postcss-cli": "^7.1.1",
+		"sass": "^1.26.5",
+		"typescript": "^3.9.2"
+	},
+	"dependencies": {
+		"autoprefixer": "^9.8.0",
+		"postcss-scss": "^2.1.0",
+		"tailwindcss": "^1.4.6",
+		"widgetsjs": "^0.1.1-nightly.1"
+	},
+	"scripts": {
+		"watch": "postcss src/style.scss -o src/tailwind.scss --env development -w"
+	}
+}
