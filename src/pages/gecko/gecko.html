@@ -1,57 +1,7 @@
 
 <div class="link"><a rel="noreferrer" href="http://github.com/neutrino2211/Gecko">View Code</a></div>
 
-<p class="introduction">
-    Widgetsjs started as a PoC for a <a rel="noreferrer" href="https://dev.to/neutrino2211/do-we-need-to-compile-website-components-5a22" target="_blank">post</a> on dev.to
-    and it slowly grew from there. After a while I cleaned up the code and rewrote it in typescript, this helped it's progress. 
-    <br>
-    <br>
-    Widgetsjs helps developers use front-end logic like "update this when this happens" as a UI element which can be treated
-    as a standalone element and is reusable across the project.
-</p>
+<h1 style="margin-top: 50px">This Part Is Still Under Construction!!!!</h1>
 
-<h2>Goal</h2>
-
-<p>
-    When I started this project, the goal was to create a light-weight model view controller that is scalable and provides most functions
-    that are provided by other libraries and ultimately to have a good learning experience on how libraries like Vue work under the hood.
-
-    <span class="green" style="font-weight: bold;">Most of this website's interactivity is managed by widgetsjs</span>
-</p>
-
-<h2>Toolchain</h2>
-
-<p>
-    The project is written in pure typescript. This was done to reduce the chances of having type errors or "undefined is not a function"
-    problems, that has been my approach to most of projects.
-
-    <br>
-    <br>
-
-    Typescript also proved to be a good choice when it came to creating interfaces that are shared between classes like how a
-    "StatelessWidget" and a "StatefulWidget" both under the hood are "Widget"s that inherit from "HTMLElement"
-</p>
-
-<h2>Problems Encountered</h2>
-
-<p>
-    One of the problems I encountered was having a widget change it's content based on it's state, this was a problem I never
-    encountered before but after some research I found out about the "MutationObserver" which allowed me to detect
-    changes in the elements attribute and Object getters and setters that helped me detect when an object in memory changed.
-</p>
-
-<h2>Lessons Learnt</h2>
-
-<p>
-    Through out the development process, I learnt more about how the DOM handles events and updates itself accordingly.
-    I also learnt how most model view controllers work and this knowledge has helped me many times at work where
-    I'd know how to help out colleagues when they got stuck on special Vue.js use-cases
-
-    <br>
-    <br>
-
-    It has also helped me appreciate all the great work done by the developers of countless libraries and how much easier they
-    have made life for us.
-</p>
 
 <link rel="stylesheet" href="./gecko.scss">
