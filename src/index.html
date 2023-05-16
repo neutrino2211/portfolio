@@ -1,40 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Mainasara Tsowa</title>
-        <link rel="stylesheet" href="./style.scss">
-        <link rel="shortcut icon" id="fav" type="image/jpeg">
-        <meta name="theme-color" id="theme" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.scss">
+</head>
+<body>
+    <info-box outline="outline" color="#D9D9D9" outline_size=5px>
+        <info-headline align_center="true" space="5px" underline="true" font="2.4rem 'Poppins', sans-serif;">MAINASARA TSOWA</info-headline>
+        <info-headline align_center="true" space="5px" font="1.5rem 'Poppins', sans-serif;" subtitle="true">
+            SENIOR BACK-END DEVELOPER & CYBER SECURITY ANALYST
+        </info-headline>
+    </info-box>
 
-        <script defer async src="./index.ts"></script>
-    </head>
-    <body>
+    <info-box margin="20px 0" outline="outline" color="#FFF" outline_size=5px>
+        <info-headline space="5px" underline="true" font="1.4rem 'Poppins', sans-serif;">ABOUT ME</info-headline>
+        <info-headline space="5px" font="1rem 'Poppins', sans-serif;" subtitle="true">
+            I'm a senior engineer that's passionate about new technologies, decentralisation and low-level systems programming.
+            <br>
+            <br>
+            Through my years as a student, intern and senior engineer, I've met Developers and Designers that have made me grow and understand what is expected from me to launch and maintain critical infrastructure and code.
+            These experiences have shaped me into an engineer that is capable of creating software applications that are robust, secure and cost-efficient
+        </info-headline>
+    </info-box>
 
-        <div class="container header">
-            <page-title>
-                <div class='image'></div>
-            </page-title>
-
-            <night-mode-toggle title="Toggle Night Mode"></night-mode-toggle>
+    <div class="column">
+        <div style="grid-area: 1 / 2 / 2 / 3;">
+            <info-box style="margin-right: 5px;" outline="outline" color="#DAC8C8" outline_size=5px $ref="col2">
+                <info-text title="true" space="2px" underline="true" font="1.2rem 'Poppins', sans-serif;">
+                    EXPERIENCE
+                </info-text>
+                <div style="font: 1rem 'Poppins', sans-serif;">
+                    <info-experience company="catlog" company_url="https://catlog.shop" duration="2022-present" role="chief technology officer">
+                        Engineered code responsible for handling thousands of dollars weekly.
+                        <br><br>
+                        Contributed to and improved certain aspects of the codebase.
+                        <br><br>
+                        Improved general quality of the dev experience for other team members through improved documentation & automation.
+                    </info-experience>
+                    <info-experience company="cyberplural" company_url="https://cyberplural.com" duration="2021-present" role="Reverse Engineer">
+                        Worked as a tier 1 SOC analyst, ensuring secure operation of client businesses.
+                        <br><br>
+                        Worked as a reverse engineer for specific malware samples found by other teams.
+                        <br><br>
+                        Wrote technical articles for the Cyberplural Blog
+                    </info-experience>
+                    <info-experience company="rushpie" company_url="https://rushpie.com" duration="2019-2021" role="Chief Technology Officer">
+                        Engineered a static website generator for creating E-Commerce websites.
+                        <br><br>
+                        Worked on a no-trust security measure for a database to reduce security impact in the case of a breach.
+                        <br><br>
+                        Worked on a feature that enabled buying domains for generated stores using AWS
+                    </info-experience>
+                    <info-experience company="provarex" company_url="https://provarex.com" duration="2019" role="Back-end Developer">
+                        Developed key functionality for the E-Learning platform, including Video Storage and Learning Resource storage and retrieval.
+                    </info-experience>
+                    <info-experience company="asusu ltd." company_url="https://asusu.ng" duration="2018-2019" role="Security consultant">
+                        Conducted security assessments to identify vulnerabilities and risks in the company's systems.
+                        <br><br>
+                        Developed and implemented security policies and procedures.
+                        <br><br>
+                        Stayed up-to-date with the latest security threats and trends, and evaluating new technologies to determine their potential usefulness to the company.
+                    </info-experience>
+                    <info-experience last="true" company="asusu ltd." company_url="https://asusu.ng" duration="2018-2019" role="Front-end engineer">
+                        Integrated API calls into two mobile apps ensuring secure communication and encrypted storage for key customer data.
+                    </info-experience>
+                </div>
+            </info-box>
         </div>
+        <div class="smaller" style="grid-area: 1 / 1 / 2 / 2;">
+            <info-box style="margin-right: 5px;" outline="outline" color="#D9DAC8" outline_size=5px $ref="col2">
+                <info-text title="true" space="2px" underline="true" font="1.2rem 'Poppins', sans-serif;">
+                    SKILLS
+                </info-text>
+                <div style="font: 1rem 'Poppins', sans-serif;">
+                    <div class="list">
+                        <div class="list-item">
+                            <p>NodeJS</p>
+                            <p>8 Years</p>
+                        </div>
+                        <div class="list-item">
+                            <p>Python</p>
+                            <p>7 Years</p>
+                        </div>
+                        <div class="list-item">
+                            <p>Golang</p>
+                            <p>5 Years</p>
+                        </div>
+                        <div class="list-item">
+                            <p>Typescript</p>
+                            <p>4 Years</p>
+                        </div>
+                    </div>
+                </div>
+            </info-box>
 
-        <div class="container body">
-            <!-- Content Dynamically Generated By Router. But display this if nothing shows -->
-            <div class="heading">
-                <h1>Uh Oh! Something went wrong when loading this page. Have you disabled Javascript?</h1>
-            </div>
+            <info-box style="margin-right: 5px;" outline="outline" color="#C8D9DA" outline_size=5px $ref="col2">
+                <info-text title="true" space="2px" underline="true" font="1.2rem 'Poppins', sans-serif;">
+                    EDUCATION
+                </info-text>
+                <div style="font: 1rem 'Poppins', sans-serif; margin-top: 10px;">
+                    <div>
+                        <div class="list">
+                            <div class="list-item">
+                                <p>University</p>
+                                <p>2016-2023</p>
+                            </div>
+                            <div class="list-item">
+                                <p>CGPA</p>
+                                <p>3.12/5</p>
+                            </div>
+                            <p>
+                                Studied Cyber Security at the Federal University of Technology, Minna.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </info-box>
+
+            <info-box style="margin-right: 5px;" outline="outline" color="#DAC8D9" outline_size=5px $ref="col2">
+                <info-text title="true" space="2px" underline="true" font="1.2rem 'Poppins', sans-serif;">
+                    CONTACT
+                </info-text>
+                <div class="contact" style="font: 1rem 'Poppins', sans-serif;">
+                    <a href="mailto:tsowamainasara@gmail.com" class="contact-item">
+                        <span style="width: 1rem; height: 1rem;">
+                            <img width="16px" height="16px" src="./assets/at.svg" alt="at sign">
+                        </span>
+                        <span>tsowamainasara@gmail.com</span>
+                    </a>
+                    <a href="https://twitter.com/neutrino2211" target="_blank" class="contact-item">
+                        <span style="width: 1rem; height: 1rem;">
+                            <img width="16px" height="16px" src="./assets/twitter.svg" alt="at sign">
+                        </span>
+                        <span>neutrino2211</span>
+                    </a>
+                    <a href="https://neutrino2211.github.io" target="_blank" class="contact-item">
+                        <span style="width: 1rem; height: 1rem;">
+                            <img width="16px" height="16px" src="./assets/website.svg" alt="at sign">
+                        </span>
+                        <span>neutrino2211.github.io</span>
+                    </a>
+                </div>
+            </info-box>
         </div>
-    </body>
-
-    <footer>
-        <div class="container">
-            <h2>Wanna Talk?</h2>
-
-            <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
-
-            <a href="mailto:neutrino2211@gmail.com">neutrino2211@gmail.com</a>
-        </div>
-    </footer>
+    </div>
+    <script type="module" src="./index.ts"></script>
+</body>
 </html>
